@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Farm Scouts - Home</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f3f3f3;
+      color: #2e7d32;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: #0d3b1d;
+      color: white;
+      padding: 30px 20px 10px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.4em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.1em;
+      margin: 8px 0 0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      background-color: #133d24;
+      padding: 14px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1em;
+    }
+    main {
+      flex: 1;
+    }
+    section {
+      max-width: 100%;
+      margin: auto;
+      padding: 60px 20px;
+      background-color: #e8f5e9;
+      text-align: center;
+    }
+    .image-slider {
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+    }
+    .slide-track {
+      display: flex;
+      width: max-content;
+      animation: scroll 60s linear infinite;
+    }
+    .slide-track img {
+      width: 320px;
+      height: 220px;
+      margin-right: 24px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .slide-track img:hover {
+      transform: scale(1.05);
+    }
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .chatbot-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      background-color: #66bb6a;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+    footer {
+      background-color: #0d3b1d;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 14px;
+    }
+    footer a {
+      color: white;
+      margin: 0 8px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Farm Scouts</h1>
+  <p>Smart Farming Made Simple</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="products.html">Products</a>
+</nav>
+
+<main>
+  <section>
+    <h2 style="font-size: 1.8em; margin-bottom: 20px;">A Truly Smarter Farming Experience</h2>
+    <p style="font-size: 1.1em; margin-bottom: 40px;">Precision tools to empower farmers and protect crops — sustainably.</p>
+    <div class="image-slider">
+      <div class="slide-track">
+        <img src="https://english.www.gov.cn/images/202403/20/65fa3630c6d0868f1ea8f515.jpeg" alt="Farmer 1" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFhB4F4JIJWLUOyAuDSd_4GuD-0hyJJN4nHg&s" alt="Farmer 2" />
+        <img src="https://sc0.blr1.cdn.digitaloceanspaces.com/article/159143-fyoisazenw-1621239169.jpg" alt="Farmer 3" />
+        <img src="https://english.www.gov.cn/images/202403/20/65fa3630c6d0868f1ea8f515.jpeg" alt="Farmer 1 Duplicate" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFhB4F4JIJWLUOyAuDSd_4GuD-0hyJJN4nHg&s" alt="Farmer 2 Duplicate" />
+        <img src="https://sc0.blr1.cdn.digitaloceanspaces.com/article/159143-fyoisazenw-1621239169.jpg" alt="Farmer 3 Duplicate" />
+        <img src="https://english.www.gov.cn/images/202403/20/65fa3630c6d0868f1ea8f515.jpeg" alt="Farmer 1" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFhB4F4JIJWLUOyAuDSd_4GuD-0hyJJN4nHg&s" alt="Farmer 2" />
+        <img src="https://sc0.blr1.cdn.digitaloceanspaces.com/article/159143-fyoisazenw-1621239169.jpg" alt="Farmer 3" />
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p><strong>Contact:</strong> +91-XXXXXXXXXX | contact@farmscouts.in</p>
+  <p><strong>Location:</strong> Chennai, Tamil Nadu</p>
+  <p>
+    <a href="#">Privacy Policy</a> |
+    <a href="#">Return Policy</a> |
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" width="20" /> Facebook</a>
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="20" /> Instagram</a>
+  </p>
+  <p>&copy; 2025 Farm Scouts. All rights reserved.</p>
+</footer>
+
+<div class="chatbot-icon" title="Chat with us">💬</div>
+
+</body>
+</html>
